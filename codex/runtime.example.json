@@ -1,0 +1,15 @@
+{
+  "application_config_path": "../../../../../../settings.json",
+  "check_interval_seconds": 3600,
+  "report_interval_seconds": 604800,
+  "report_retry_seconds": 3600,
+  "run_report_on_start": false,
+  "notification_cooldown_seconds": 86400,
+  "report_output_dir": "./reports",
+  "state_path": "./runtime-state.json",
+  "api_host": "127.0.0.1",
+  "api_port": 8765,
+  "api_token_env": "CERTIFICATE_ANALYZER_RUNTIME_TOKEN",
+  "api_max_page_size": 500,
+  "alert_history_size": 100
+}

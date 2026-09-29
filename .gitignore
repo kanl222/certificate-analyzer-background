@@ -1,0 +1,39 @@
+# Байт-код и кэш
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Виртуальные окружения
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# Переменные окружения
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Дистрибутивы и сборка
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Тестирование и покрытие
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# mypy, ruff
+.mypy_cache/
+.ruff_cache/
+
+# PyInstaller
+*.spec

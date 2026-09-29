@@ -1,0 +1,17 @@
+[Unit]
+Description=Certificate Analyzer isolated expiration monitor
+After=network.target
+
+[Service]
+Type=simple
+# Замените пути перед установкой unit-файла.
+WorkingDirectory=/opt/certificate-analyzer
+Environment=CERTIFICATE_ANALYZER_RUNTIME_CONFIG=/etc/certificate-analyzer/runtime.json
+ExecStart=/opt/certificate-analyzer/.venv/bin/python -m certificate_analyzer.runtime.codex --config /etc/certificate-analyzer/runtime.json
+Restart=on-failure
+RestartSec=10
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
